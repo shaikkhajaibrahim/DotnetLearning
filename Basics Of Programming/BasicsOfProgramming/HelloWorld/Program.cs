@@ -1,13 +1,20 @@
-﻿using System;
+﻿#region Namespace Imports
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MyTelevison;
+#endregion
 
+//Name Space Declaration
 namespace HelloWorld
 {
+    // Class
     class Program
     {
+        // Methods (Main Method)
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -21,6 +28,10 @@ namespace HelloWorld
 
             const int myFirstConstantInteger = 10;
             //myFirstConstantInteger = 20;
+
+            Television t = new Television();
+            t.StreamVideos();
+
         }
     }
 }
