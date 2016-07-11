@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MyTelevison;
+using DotnetTraining.NamespaceDemo.Library;
 #endregion
 
 //Name Space Declaration
@@ -30,8 +30,36 @@ namespace HelloWorld
             //myFirstConstantInteger = 20;
 
             Television t = new Television();
-            t.StreamVideos();
+            t.Display();
+
+            Student student = new Student();
+            student.DepartmentId = 10;
+            student.StudentId = 1;
+            Console.WriteLine(student.TakeBook(10));
+            Student.AddCount();
+            Console.WriteLine(Student.GetCount());
+
+            Student student2 = new Student();
+            Student.AddCount();
+            student2.DepartmentId = 11;
+            student2.StudentId = 2;
+            Console.WriteLine(Student.GetCount());
+            //Console.WriteLine(student.)
+
+            int number = 5;
+            MyNumber myNumber = new MyNumber(number);
+            if(myNumber.IsEven())
+            {
+                Console.WriteLine("Even");
+                Console.WriteLine(myNumber.GetSignalColorPremium());
+            }
+            else
+            {
+                Console.WriteLine("Odd");
+            }
 
         }
+
+        
     }
 }

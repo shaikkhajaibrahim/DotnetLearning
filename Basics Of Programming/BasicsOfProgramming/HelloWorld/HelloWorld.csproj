@@ -45,10 +45,15 @@
     <Compile Include="Other\Television.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Television.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotnetTraining.NamespaceDemo.Library\DotnetTraining.NamespaceDemo.Library.csproj">
+      <Project>{92bada66-3ed9-4bbb-bfdb-c0010276d2c2}</Project>
+      <Name>DotnetTraining.NamespaceDemo.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
