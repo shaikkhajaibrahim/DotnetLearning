@@ -12,6 +12,9 @@ using DotnetTraining.NamespaceDemo.Library;
 namespace HelloWorld
 {
     // Class
+    /// <summary>
+    /// 
+    /// </summary>
     class Program
     {
         // Methods (Main Method)
@@ -26,7 +29,7 @@ namespace HelloWorld
             myFirstInteger = 20;
             Console.WriteLine(myFirstInteger);
 
-            const int myFirstConstantInteger = 10;
+            //const int myFirstConstantInteger = 10;
             //myFirstConstantInteger = 20;
 
             Television t = new Television();
