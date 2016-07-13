@@ -1,4 +1,6 @@
 ﻿using DotnetTraining.NextSteps.Library;
+using DotnetTraining.NextSteps.Library.Contracts;
+using DotnetTraining.NextSteps.Library.Implementations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +38,45 @@ namespace NextStep
             int convertedNumber = int.Parse(number);
             //Try Parse
 
+            Vehicle vehicle1 = new Bike("Yamaha");
+            DisplayVehicleInfo(vehicle1);
+            if(vehicle1 is Car)
+            {
+                DisplayCarInfo((Car)vehicle1);
+            }
+            else
+            {
+                // Safe Cast
+                Bike b1 = vehicle1 as Bike;
+                if(b1!=null)
+                {
+                    Console.WriteLine("B1 is Bike");
+                }
+                else
+                {
+                    Console.WriteLine("B1 is not Bike");
+                }
+                Bike b2 = vehicle as Bike;
+                if(b2!=null)
+                {
+                    Console.WriteLine("B2 is Bike");
+                }
+                else
+                {
+                    Console.WriteLine("B2 is not Bike");
+                    Console.WriteLine("Type of B2 is "+vehicle.GetType());
+                }
+            }
+
+            IEngine engine1 = new Tcdi();
+            IEngine engine2 = new VVTT();
+            
+
+        }
+
+        public void DisplayEngineDetails(IEngine engine)
+        {
+            Console.WriteLine(   engine.GetEngineModel());
         }
 
         private static void DisplayVehicleInfo(Vehicle vehicle)

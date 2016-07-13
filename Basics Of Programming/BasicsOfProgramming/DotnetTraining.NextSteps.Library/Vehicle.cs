@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DotnetTraining.NextSteps.Library.Contracts;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,9 +12,17 @@ namespace DotnetTraining.NextSteps.Library
     /// </summary>
     public class Vehicle
     {
+        //compostions
+        protected IEngine engine;
+
         public Vehicle(string engineType)
         {
             this.engineType = engineType;
+        }
+
+        public void SetEngine(IEngine engine)
+        {
+            this.engine = engine;
         }
 
         /// <summary>
