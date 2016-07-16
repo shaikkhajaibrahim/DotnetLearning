@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{36B9419F-9014-472D-A4BA-898D81B3602A}</ProjectGuid>
+    <ProjectGuid>{6AF6D307-9283-4FF6-A0ED-79104B11B98D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DotnetTraining.NextSteps.Library</RootNamespace>
-    <AssemblyName>DotnetTraining.NextSteps.Library</AssemblyName>
+    <RootNamespace>CruiseBooking</RootNamespace>
+    <AssemblyName>CruiseBooking</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,16 +40,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Bike.cs" />
-    <Compile Include="Car.cs" />
-    <Compile Include="Contracts\IEngine.cs" />
-    <Compile Include="Contracts\VehicleBooking.cs" />
-    <Compile Include="Implementations\BusBooking.cs" />
-    <Compile Include="Implementations\FlightBooking.cs" />
-    <Compile Include="Implementations\Tcdi.cs" />
-    <Compile Include="Implementations\VVTT.cs" />
-    <Compile Include="Vehicle.cs" />
+    <Compile Include="CruiseBooking.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DotnetTraining.NextSteps.Library\DotnetTraining.NextSteps.Library.csproj">
+      <Project>{36b9419f-9014-472d-a4ba-898d81b3602a}</Project>
+      <Name>DotnetTraining.NextSteps.Library</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

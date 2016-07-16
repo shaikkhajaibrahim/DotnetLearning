@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NextStep", "NextStep\NextSt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotnetTraining.NextSteps.Library", "DotnetTraining.NextSteps.Library\DotnetTraining.NextSteps.Library.csproj", "{36B9419F-9014-472D-A4BA-898D81B3602A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookingDemo", "BookingDemo\BookingDemo.csproj", "{CD330482-5EA6-4D17-862B-0598CF233ED7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CruiseBooking", "CruiseBooking\CruiseBooking.csproj", "{6AF6D307-9283-4FF6-A0ED-79104B11B98D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{36B9419F-9014-472D-A4BA-898D81B3602A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{36B9419F-9014-472D-A4BA-898D81B3602A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{36B9419F-9014-472D-A4BA-898D81B3602A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD330482-5EA6-4D17-862B-0598CF233ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD330482-5EA6-4D17-862B-0598CF233ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD330482-5EA6-4D17-862B-0598CF233ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD330482-5EA6-4D17-862B-0598CF233ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AF6D307-9283-4FF6-A0ED-79104B11B98D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AF6D307-9283-4FF6-A0ED-79104B11B98D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AF6D307-9283-4FF6-A0ED-79104B11B98D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AF6D307-9283-4FF6-A0ED-79104B11B98D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
