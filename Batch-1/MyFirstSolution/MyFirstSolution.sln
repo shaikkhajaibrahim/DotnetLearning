@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceDemo", "Inherita
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritanceLibrary", "InheritanceLibrary\InheritanceLibrary.csproj", "{0939E0CE-89DE-4374-B918-E75A56B5AAB3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringDemo", "StringDemo\StringDemo.csproj", "{5DFF1617-3C8E-4205-9C9A-43EEE4901EE3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{0939E0CE-89DE-4374-B918-E75A56B5AAB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0939E0CE-89DE-4374-B918-E75A56B5AAB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0939E0CE-89DE-4374-B918-E75A56B5AAB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DFF1617-3C8E-4205-9C9A-43EEE4901EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DFF1617-3C8E-4205-9C9A-43EEE4901EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DFF1617-3C8E-4205-9C9A-43EEE4901EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DFF1617-3C8E-4205-9C9A-43EEE4901EE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
