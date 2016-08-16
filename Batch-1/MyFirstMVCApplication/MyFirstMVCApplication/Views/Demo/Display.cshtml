@@ -1,0 +1,24 @@
+﻿@model List<MyFirstMVCApplication.Models.Bus>
+@{
+    ViewBag.Title = "Display";
+}
+
+<h2>Display</h2>
+
+@foreach(MyFirstMVCApplication.Models.Bus b in Model)
+{
+    @Html.DisplayFor(x=>b.Id)
+}
+
+<h3> Razor syntax </h3>
+
+<h3>@DateTime.Now.ToLongTimeString()</h3>
+
+@{ 
+    DateTime dt = DateTime.Now;
+
+}
+
+
+<h2> @dt</h2>
+

@@ -1,0 +1,11 @@
+﻿@model IEnumerable<string>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@foreach(string item in Model)
+{
+    @Html.LabelFor(x=>item);
+}
+
