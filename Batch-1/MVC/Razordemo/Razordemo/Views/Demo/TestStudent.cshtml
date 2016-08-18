@@ -1,0 +1,19 @@
+﻿@model Razordemo.Models.Student
+@{
+    ViewBag.Title = "TestStudent";
+}
+
+<h2>TestStudent</h2>
+
+<ul>
+    <li>Student id :@Model.Id</li>
+    <li>Student Name: @Model.Name</li>
+    <li>Student Standard: @Model.Standard</li>
+</ul>
+@Html.ActionLink("Default", "Index")
+Enter Id @Html.TextBoxFor(m=>m.Id, new { @class = "form-control" }) @*@Html.TextBox("Student Id",null,new { @class="form-control"})*@
+Enter Name @Html.TextBoxFor(m=>m.Name,new { @class="form-control"})
+Is Fee Paid @Html.CheckBoxFor(m=>m.IsFeePaid)
+
+Gender @Html.DropDownListFor(m=>m.Gender,new SelectList(Enum.GetValues(typeof(Razordemo.Models.Gender)),"Select Any one Gender"))
+

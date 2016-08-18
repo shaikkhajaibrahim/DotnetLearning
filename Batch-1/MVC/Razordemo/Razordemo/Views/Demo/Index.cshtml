@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@{ 
+    var todayInDate = DateTime.Now;
+    var today = DateTime.Now.ToShortDateString();
+    var userName = "Demo";
+}
+
+<h1>Razor Demo</h1>
+<h2>@today</h2>
+<p>Hello @userName, Todays Date is @today</p>
+
+@if(todayInDate.Year==2016)
+{
+    @todayInDate.Year @: is my favorite year.
+}
+else
+{
+    @todayInDate.Year @: is not my favorite year.
+}
+
+@for(int index=0;index<todayInDate.Day;index++)
+{
+    @index.ToString() <br/>
+}
+
+@Html.ActionLink("Test Student", "TestStudent")
+
