@@ -166,6 +166,7 @@
     <Content Include="Views\Demo\Index.cshtml" />
     <Content Include="Views\Demo\TestStudent.cshtml" />
     <Content Include="Views\Demo\Edit.cshtml" />
+    <Content Include="Views\Shared\_MyLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

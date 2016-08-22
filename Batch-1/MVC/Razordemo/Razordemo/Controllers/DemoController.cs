@@ -20,11 +20,16 @@ namespace Razordemo.Controllers
         // GET: Demo
         public ActionResult Index()
         {
+            ViewBag.Name = "ADSO";
+            ViewBag.Student = s;
+            ViewData["StudentKey"] = s;
+            TempData["Hello"] = "Hai";
             return View();
         }
 
         public ActionResult TestStudent()
         {
+            s.Name = TempData["Hello"] as string;
             
             return View(s);
         }

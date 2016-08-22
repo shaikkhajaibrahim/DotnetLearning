@@ -1,16 +1,20 @@
 ﻿
 @{
     ViewBag.Title = "Index";
+
 }
 
 @{ 
     var todayInDate = DateTime.Now;
     var today = DateTime.Now.ToShortDateString();
     var userName = "Demo";
+    Razordemo.Models.Student studentFromViewData = ViewData["StudentKey"] as Razordemo.Models.Student;
 }
 
-<h1>Razor Demo</h1>
+<h1>Razor Demo ---@ViewBag.Name</h1>
 <h2>@today</h2>
+<h1>Having Student Details of Name=@ViewBag.Student.Name   Id=@studentFromViewData.Id</h1>
+
 <p>Hello @userName, Todays Date is @today</p>
 
 @if(todayInDate.Year==2016)

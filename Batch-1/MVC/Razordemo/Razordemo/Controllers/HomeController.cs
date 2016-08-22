@@ -6,10 +6,12 @@ using System.Web.Mvc;
 
 namespace Razordemo.Controllers
 {
+    
     public class HomeController : Controller
     {
         public ActionResult Index()
         {
+            //ActionFilterAttribute
             return View();
         }
 
