@@ -134,6 +134,7 @@
     <Compile Include="Controllers\DemoController.cs" />
     <Compile Include="Controllers\FirstController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\SportsEventsController.cs" />
     <Compile Include="Controllers\TeachersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -190,10 +191,16 @@
     <Content Include="Views\Address\Index.cshtml" />
     <Content Include="Views\Demo\Index.cshtml" />
     <Content Include="Views\Demo\Display.cshtml" />
+    <Content Include="Views\SportsEvents\Create.cshtml" />
+    <Content Include="Views\SportsEvents\Delete.cshtml" />
+    <Content Include="Views\SportsEvents\Details.cshtml" />
+    <Content Include="Views\SportsEvents\Edit.cshtml" />
+    <Content Include="Views\SportsEvents\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Views\First\" />
+    <Folder Include="Views\Sports\" />
     <Folder Include="Views\Student\" />
   </ItemGroup>
   <ItemGroup>

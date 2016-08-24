@@ -14,7 +14,6 @@ namespace MyFirstMVCApplication.Controllers
         // GET: Address
         public ActionResult Index()
         {
-            
            
             return View(db.Addresses.ToList());
         }
