@@ -1,0 +1,48 @@
+﻿@model IEnumerable<MyFirstMVCApplication.Models.SportsEvent>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<p>
+    @ViewBag.MyName Students Name is @ViewBag.Student.Name
+</p>
+<p>
+    @ViewData["MyName1"] Students Name is @((ViewData["MyStudent"] as MyFirstMVCApplication.Models.Student).Name)
+</p>
+@*<p>
+    @TempData["Test1"]
+</p>*@
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EventDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EventVenue)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EventVenue)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EventName }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EventName }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EventName })
+        </td>
+    </tr>
+}
+
+</table>

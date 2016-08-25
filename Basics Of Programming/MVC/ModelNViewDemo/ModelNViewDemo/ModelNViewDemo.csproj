@@ -185,6 +185,7 @@
     <Content Include="Views\Phones\Details.cshtml" />
     <Content Include="Views\Phones\Edit.cshtml" />
     <Content Include="Views\Phones\Index.cshtml" />
+    <Content Include="Views\Shared\_MyLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

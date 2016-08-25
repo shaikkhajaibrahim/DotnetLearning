@@ -4,11 +4,12 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
+using WcfHelloWorld.Data;
 
 namespace WcfHelloWorld
 {
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in both code and config file together.
-    public class Service1 : IService1
+    public class CalculatorService : ICalculatorService
     {
         //public string GetData(int value)
         //{
@@ -30,7 +31,13 @@ namespace WcfHelloWorld
 
         public int Add(int a, int b)
         {
-            return a + b;
+            int c= a + b;
+            using (CalculatorContext context = new CalculatorContext())
+            {
+                context.AdditionResults.Add(new Add() {Value1 = a, Value2 = b, Result = c});
+                context.SaveChanges();
+            }
+            return c;
         }
 
         public int Square(int a)
